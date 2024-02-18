@@ -2,9 +2,8 @@ import "../App.css";
 import io from "socket.io-client";
 import { useState } from "react";
 import Chat from "./Chat";
-import REACT_APP_BACKEND_URL from "../../../client/.e";
 
-const socket = io.connect(`${process.env.REACT_APP_BACKEND_URL}`);
+const socket = io.connect("http://localhost:3001");
 
 function JoinProblemRoom() {
   const [username, setUsername] = useState("");
