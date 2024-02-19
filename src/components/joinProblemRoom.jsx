@@ -5,6 +5,7 @@ import Chat from "./Chat";
 
 const socket = io.connect(`${process.env.REACT_APP_BACKEND_URL}`);
 
+// if the Railway connection not works switch to ->
 // const socket = io.connect("http://localhost:3001");
 
 function JoinProblemRoom() {
