@@ -6,7 +6,9 @@ import Output from "./Output";
 import io from "socket.io-client";
 import { useParams } from "react-router-dom";
 
-const socket = io.connect(`${process.env.REACT_APP_BACKEND_URL}`);
+// const socket = io.connect(`${process.env.REACT_APP_BACKEND_URL}`);
+
+const socket = io.connect("http://localhost:3001");
 
 const codeRoom = `welcome to the room `;
 
